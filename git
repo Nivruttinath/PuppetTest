@@ -1,0 +1,102 @@
+Git 
+Installation
+# sudo apt-get update
+# sudo apt-get install git
+
+Clone existing repository
+# mkdir gitstuddy && cd gitstuddy
+# git clone https://github.com/Nivruttinath/PuppetTest.git
+
+Commit History
+# git log
+# git log -p <filename>
+Who chaned what and when in a file
+# git blame <filename>
+# git blame Testbash.sh
+6926220d (Nivruttinath 2017-05-08 21:19:31 +0530 1) #/bin/bash
+6926220d (Nivruttinath 2017-05-08 21:19:31 +0530 2) echo "Hello $LOGNAME"
+
+Branches and Tags
+#git branch
+* master
+# git branch -av
+* master                6926220 Create Testbash.sh
+  remotes/origin/HEAD   -> origin/master
+  remotes/origin/master 6926220 Create Testbash.sh
+Create new branch
+# git branch test
+Delete new branch
+# git branch -d test
+
+Edit a file while you are in branch test and commit the changes.
+# vi Testbash.sh
+# git commit -m"Updated file"
+Now change the branch and you will not see the contents added in test branch.
+# git checkout master
+Now you can make the changes in the same file and commit. At this point two branches have diverged, with different changes made in each. To merge the changes made in test into master, run:
+# git merge test
+If the changes dont conflict, you are done. If there are conflicts, then resolve the conflicts and commit the changes.
+
+git add command will track the files and keep them in staging area. To remove the files files from staging area or to untrack them use the below command:
+# git rm --cached <filename>
+# git reset <filename>
+
+To add the modified files into staging area and commit them at the same time, use the below command :
+# git commit -a -m "Do something once more"
+
+
+commit e8115483ab03704d95583f600132f5b4aed0065f
+Author: Niv <nivruttinath.pethkar@gmail.com>
+Date:   Mon Jun 4 00:14:38 2018 +0530
+
+    Added newfile
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+We want to see all branches that exist. Adding the -a to the end of our command tells GIT that we want to see all branches that exist including ones that we do not have in our local workspace.
+# git branch -a
+
+
+
+
+
+
+
+https://tools.dct.vodafone.com/gitlab/infra/puppet-control.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

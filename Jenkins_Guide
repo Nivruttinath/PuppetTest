@@ -1,0 +1,53 @@
+JDK - 1.8.0_171
+
+java home : /usr/lib/jvm/java-8-oracle
+jre home : /usr/lib/jvm/java-8-oracle/jre
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Jenkins Installation Steps :
+https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04
+
+Prerequisites :
+One Ubuntu 16.04 server configured with a non-root sudo user.
+
+Step 1 — Installing Jenkins :
+First, we'll add the repository key to the system.
+# wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+When the key is added, the system will return OK. Next, we'll append the Debian package repository address to the server's sources.list:
+# echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+When both of these are in place, we'll run update so that apt-get will use the new repository:
+# sudo apt-get update
+Finally, we'll install Jenkins and its dependencies, including Java:
+# sudo apt-get install jenkins
+Now that Jenkins and its dependencies are in place, we'll start the Jenkins server.
+
+
+Step 2 — Starting Jenkins
+Using systemctl we'll start Jenkins:
+# sudo systemctl start jenkins
+# sudo systemctl status jenkins
+If everything went well, the beginning of the output should show that the service is active and configured to start at boot.
+
+Step 3 — Opening the Firewall
+By default, Jenkins runs on port 8080, so we'll open that port using ufw:
+# sudo ufw allow 8080
+We can see the new rules by checking UFW's status.
+# sudo ufw status
+If the firewall is inactive, the following commands will make sure that OpenSSH is allowed and then enable it.
+# sudo ufw allow OpenSSH
+# sudo ufw enable
+
+Step 4 — Setting up Jenkins
+To set up our installation, we'll visit Jenkins on its default port, 8080, using the server domain name or IP address: http://ip_address_or_domain_name:8080
+We should see "Unlock Jenkins" screen, which displays the location of the initial password. Copy and paste that password to access the jenkins.
+The next screen presents the option of installing suggested plugins or selecting specific plugins. We'll click the "Install suggested plugins" option, which will immediately begin the installation process. When the installation is complete, we'll be prompted to set up the first administrative user. Once the first admin user is in place, you should see a "Jenkins is ready!" confirmation screen. Click "Start using Jenkins" to visit the main Jenkins dashboard.
+
+http://niv.thinkpad.com:8080/
+Nivadmin
+Let$doit!
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+https://handstandsam.com/2016/04/23/using-the-android-emulator-for-continuous-integration/
+

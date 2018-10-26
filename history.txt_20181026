@@ -1,0 +1,1000 @@
+ 1067  cd ../src/
+ 1068  ls
+ 1069  cd main/
+ 1070  ls
+ 1071  cd groovy/
+ 1072  ls
+ 1073  cd ssp/
+ 1074  ls
+ 1075  cd ../../..
+ 1076  ls
+ 1077  cd ..
+ 1078  ls
+ 1079  less gradlew
+ 1080  ls -ltr
+ 1081  cd scripts/
+ 1082  ls
+ 1083  cd db_oracle/
+ 1084  ls -ltr
+ 1085  cd migrations/
+ 1086  ls
+ 1087  ls -ltr
+ 1088  cd BP_1.0_156_to_BP_1.0_157/
+ 1089  ls
+ 1090  cat 01_ssp.sql 
+ 1091  less 01_ssp.sql 
+ 1092  cd ../../../..
+ 1093  ls
+ 1094  cd
+ 1095  kubectl exec -n=da-dev -it ssp-deployment-7c7d55687c-vp4pz  sh
+ 1096  kubectl get pods -n=da-dev
+ 1097  kubectl exec -n=da-dev -it sqlplus-77d5cc687d-jqdbx  sh
+ 1098  xit
+ 1099  kubectl exec -n=da-dev -it sqlplus-77d5cc687d-jqdbx  sh
+ 1100  cd Documents/project/blueprint-ssp
+ 1101  ls
+ 1102  cd ..
+ 1103  ls -ltr
+ 1104  cd
+ 1105  cd Documents/project/
+ 1106  ls
+ 1107  cd
+ 1108  kubectl get pods -n=dev
+ 1109  kubectl get pods -n=da-dev
+ 1110  kubectl exec -n=da-dev -it ssp-deployment-75c9c64f75-bbhnv  sh
+ 1111  kubectl get pods -n=da-dev
+ 1112  kubectl exec -n=da-dev -it sqlplus-7d4d4c67f5-t4fb7  sh
+ 1113  kubectl  get pods --namespace da-dev
+ 1114  kubectl exec -n=da-dev -it sqlplus-7d4d4c67f5-t4fb7  sh
+ 1115  kubectl  get pods --namespace da-dev
+ 1116  kubectl exec -n=da-dev -it ssp-deployment-bf4684598-xwl7r  sh
+ 1117  kubectl -n da-dev log ssp-deployment-bf4684598-xwl7r
+ 1118  kubectl -n da-dev log -f ssp-deployment-bf4684598-xwl7r
+ 1119  kubectl  get pods --namespace da-dev
+ 1120  kubectl -n da-dev log -f ssp-deployment-7c4858d79-gnqxs
+ 1121  kubectl  get pods --namespace da-dev
+ 1122  kubectl -n da-dev log -f ssp-deployment-7c4858d79-gnqxs
+ 1123  kubectl  get pods --namespace da-dev
+ 1124  kubectl exec -n=da-dev -it ssp-deployment-698f7bd566-s6knn  sh
+ 1125  kubectl -n da-dev log -f ssp-deployment-698f7bd566-s6knn
+ 1126  kubectl  get pods --namespace da-dev
+ 1127  kubectl exec -n=da-dev -it ssp-deployment-67949c8b66-sw4mv  sh
+ 1128  kubectl -n da-dev log -f ssp-deployment-67949c8b66-sw4mv
+ 1129  kubectl  get pods --namespace da-dev
+ 1130  kubectl -n da-dev log -f ssp-deployment-67949c8b66-sw4mv
+ 1131  d
+ 1132  cd Documents/project/
+ 1133  ls
+ 1134  cd da-dev/
+ 1135  ls
+ 1136  cd conf-aws/
+ 1137  ls
+ 1138  git status
+ 1139  git pull
+ 1140  ls
+ 1141  cd 20-ssp/
+ 1142  ls
+ 1143  cd config/
+ 1144  ls
+ 1145  vi application.yml 
+ 1146  cd ..
+ 1147  ls
+ 1148  cd k8s/
+ 1149  cd ..
+ 1150  ls
+ 1151  cd config/
+ 1152  ls
+ 1153  vi application.yml 
+ 1154  cd ../..
+ 1155  ls
+ 1156  git status
+ 1157  git pull
+ 1158  git status
+ 1159  git pull
+ 1160  git status
+ 1161  git branch
+ 1162  git pull
+ 1163  ls
+ 1164  cd 20-ssp/
+ 1165  ls
+ 1166  cd config/
+ 1167  vi application.yml 
+ 1168  git pull
+ 1169  cd
+ 1170  kubectl get pods -n=da-dev
+ 1171  kubectl exec -n=da-dev -it ssp-deployment-75c9c64f75-bbhnv  sh
+ 1172  kubectl get pods -n=da-dev
+ 1173  kubectl exec -n=da-dev -it ssp-deployment-68d9756879-5vbqc sh
+ 1174  cd Documents/project/
+ 1175  ls
+ 1176  cd 20-ss
+ 1177  cd da-dev/
+ 1178  ls
+ 1179  cd conf-aws/20-ssp/
+ 1180  ls
+ 1181  cd config/
+ 1182  ls
+ 1183  git pull
+ 1184  ls
+ 1185  vi application.yml 
+ 1186  git status
+ 1187  git add .
+ 1188  git commit -m"test"
+ 1189  git push
+ 1190  git status
+ 1191  ls
+ 1192  git pull
+ 1193  vi application.yml 
+ 1194  git status
+ 1195  git add .~
+ 1196  git commit -m"Updated application.yml" 
+ 1197  git status
+ 1198  git push
+ 1199  git status
+ 1200  cd Documents/project/
+ 1201  ls
+ 1202  cd blueprint-ssp
+ 1203  ls -lr
+ 1204  ls -ltr
+ 1205  git branch
+ 1206  git pull
+ 1207  ls
+ 1208  find ./ -type f | xargs grep -i 'http://webdav/' 
+ 1209  ssh npethkar@145.230.100.5
+ 1210  ssh npethkar@85.205.246.205
+ 1211  nslookup 85.205.246.205
+ 1212  ls -ltr
+ 1213  git branch
+ 1214  cd blueprint_home/
+ 1215  ls
+ 1216  vi application.yml 
+ 1217  cd ..
+ 1218  find ./ -type f | xargs grep -i 'http://webdav/' 
+ 1219  git pull
+ 1220  ls
+ 1221  ls -ltr
+ 1222  cd blueprint_home/
+ 1223  ls
+ 1224  vi application.yml 
+ 1225  git pull
+ 1226  vi application.yml 
+ 1227  cd ..
+ 1228  ls
+ 1229  vi grails-app/conf/application.yml 
+ 1230  git status
+ 1231  git commit -m"Updated webdav locations"
+ 1232  git status
+ 1233  git add .
+ 1234  git commit -m"Updated webdav locations"
+ 1235  git status
+ 1236  git push 
+ 1237  git status
+ 1238  git pull
+ 1239  ls
+ 1240  cd blueprint_home/
+ 1241  ls
+ 1242  vi application.yml 
+ 1243  git pull
+ 1244  vi application.yml 
+ 1245  cd ..
+ 1246  ls
+ 1247  vi grails-app/conf/application.yml 
+ 1248  git status
+ 1249  git add .
+ 1250  git commit -m"Updated image url paths" 
+ 1251  git status
+ 1252  git push
+ 1253  git status
+ 1254  git pull
+ 1255  ls
+ 1256  cd blueprint_home/
+ 1257  ls
+ 1258  vi application.yml 
+ 1259  cat application.yml | grep 8443 | wc -l
+ 1260  cat application.yml | grep 8444 | wc -l
+ 1261  vi application.yml 
+ 1262  cat application.yml | grep 8443 | wc -l
+ 1263  cat application.yml | grep 8444 | wc -l
+ 1264  vi application.yml 
+ 1265  cd ..
+ 1266  ls
+ 1267  vi grails-app/conf/application.yml 
+ 1268  cat grails-app/conf/application.yml | grep 8443
+ 1269  cat grails-app/conf/application.yml | grep 8444
+ 1270  ls
+ 1271  find ./ -type f | xargs grep -i '8443' 
+ 1272  cd ..
+ 1273  ls
+ 1274  cd blueprint-ssp
+ 1275  find ./ -type f | xargs grep -i '8443' 
+ 1276  git status
+ 1277  git add .
+ 1278  git commit -m"Updated ssl port number as 8444"
+ 1279  git status
+ 1280  git push
+ 1281  git pull
+ 1282  git status
+ 1283  git pushh
+ 1284  git push
+ 1285  cd ..
+ 1286  ls
+ 1287  cd blueprint-platform/
+ 1288  ls -ltr
+ 1289  find ./ -type f | xargs grep -i '8443' 
+ 1290  git branch
+ 1291  find ./ -type f | xargs grep -i '8443' 
+ 1292  cd ..
+ 1293  ls -ltr
+ 1294  git clone  https://tools.dct.vodafone.com/gitlab/VF-Enablers/irisvfaccess.git
+ 1295  ls
+ 1296  ls -ltr
+ 1297  git clone  https://tools.dct.vodafone.com/gitlab/vf-start/iris.git
+ 1298  ls -ltr
+ 1299  cd iris
+ 1300  ls
+ 1301  git branch
+ 1302  cd ..
+ 1303  git clone  https://tools.dct.vodafone.com/gitlab/vf-start/juno.git
+ 1304  ls -ltr
+ 1305  cd irisvfaccess/
+ 1306  git branch
+ 1307  ls
+ 1308  git push 
+ 1309  ls
+ 1310  vi README.md 
+ 1311  git status
+ 1312  git add .
+ 1313  git commit -m"Test"
+ 1314  git push
+ 1315  cd Documents/project/
+ 1316  ls -ltr
+ 1317  cd irisvfaccess/
+ 1318  ls
+ 1319  cp -r ../iris/* .
+ 1320  ls
+ 1321  git status
+ 1322  find ./ -type f| xargs grep -i iris
+ 1323  ls
+ 1324  find ./ -type f  -exec sed -i "s/iris/irisvfaccess/g" {} \;
+ 1325  cd src/main/resources/
+ 1326  vi application.yaml 
+ 1327  cd ../../..
+ 1328  ls
+ 1329  find ./ -type f  -exec sed -i "s/IRIS/IRISVFACCESS/g" {} \;
+ 1330  git status
+ 1331  git add .
+ 1332  git status
+ 1333  git commit -m"New content added for irisvfaccess"
+ 1334  git status
+ 1335  git branch
+ 1336  git push origin master
+ 1337  git status
+ 1338  ls
+ 1339  git status
+ 1340  cd Documents/project/iris
+ 1341  ls -ltr
+ 1342  cp -r src ../irisvfaccess/
+ 1343  ls -ltr
+ 1344  cp -r gatling-loadtests cucumber build-scripts influxdb.generated.conf readme.txt pom.xml ../irisvfaccess/
+ 1345  cd logs/
+ 1346  ls
+ 1347  ls -ltr
+ 1348  cd ..
+ 1349  du -sh *
+ 1350  cd ..
+ 1351  ls -ltr
+ 1352  git clone  https://tools.dct.vodafone.com/gitlab/VF-Enablers/junovfaccess.git
+ 1353  ls
+ 1354  ls -ltr
+ 1355  cd junovfaccess/
+ 1356  ls -ltr
+ 1357  cd .git/
+ 1358  ls
+ 1359  cat index 
+ 1360  cd ..
+ 1361  ls -ltr
+ 1362  ls
+ 1363  ls -al
+ 1364  git status
+ 1365  ls
+ 1366  vi pom.xml 
+ 1367  git status
+ 1368  git add .
+ 1369  git commit -m"New juno project"
+ 1370  git push
+ 1371  ls -al
+ 1372  cd .git/
+ 1373  ls
+ 1374  cat index 
+ 1375  vi index 
+ 1376  cd ..
+ 1377  ls -ltr
+ 1378  vi README.md 
+ 1379  git status
+ 1380  git add README.md 
+ 1381  git commit -m"Updated for testing"
+ 1382  git push
+ 1383  cd ..
+ 1384  ls -ltr
+ 1385  git clone  https://tools.dct.vodafone.com/gitlab/VF-Enablers/irisvfaccess.git
+ 1386  ls
+ 1387  ls -ltr
+ 1388  cd irisvfaccess/
+ 1389  ls -ltra
+ 1390  cd .git/
+ 1391  ls
+ 1392  cd ..
+ 1393  ls -ltr
+ 1394  git status
+ 1395  cd .git/
+ 1396  ls
+ 1397  cd ..
+ 1398  ls -ltr
+ 1399  git status
+ 1400  git add .
+ 1401  git commit -m"New project added"
+ 1402  git push
+ 1403  ls -ltr
+ 1404  vi pom.xml 
+ 1405  git status
+ 1406  git commit -m"updated pom.xml"
+ 1407  git add .
+ 1408  git commit -m"updated pom.xml"
+ 1409  git push
+ 1410  ls
+ 1411  cd ..
+ 1412  ls -ltr
+ 1413  cd irisvfaccess/
+ 1414  ls
+ 1415  cd ..
+ 1416  cd irisvfaccess/
+ 1417  ls
+ 1418  cd ..
+ 1419  cd irisvfaccess/
+ 1420  ls
+ 1421  cd ..
+ 1422  cd irisvfaccess/
+ 1423  ls
+ 1424  ls -ltr
+ 1425  ls -al
+ 1426  cd .git/
+ 1427  ls
+ 1428  cat in
+ 1429  cat index 
+ 1430  vi index 
+ 1431  cd ..
+ 1432  git ls-files --stage
+ 1433  ls
+ 1434  cd src/main/resources/
+ 1435  ls -ltr
+ 1436  vi application.yaml 
+ 1437  ls -ltr
+ 1438  vi log4j2.vfaccess1.xml
+ 1439  cd ..
+ 1440  cd ../../..
+ 1441  ls
+ 1442  cd junovfaccess/
+ 1443  ls
+ 1444  cd src/main/resources/
+ 1445  vi application.yaml 
+ 1446  cd
+ 1447  cd Documents/project/junovfaccess/
+ 1448  ls
+ 1449  ls -ltr
+ 1450  vi README.md 
+ 1451  git status
+ 1452  git add .
+ 1453  git commit -m"Testing"
+ 1454  git push
+ 1455  cd ../irisvfaccess/
+ 1456  ls
+ 1457  vi README.md
+ 1458  cat ../junovfaccess/README.md 
+ 1459  vi RE
+ 1460  vi README.md
+ 1461  git status
+ 1462  git add .
+ 1463  git commit -m"Testing"
+ 1464  git push
+ 1465  cd Documents/project/
+ 1466  ls -ltr
+ 1467  cd iris
+ 1468  ls
+ 1469  git branch
+ 1470  git pull
+ 1471  cd ../irisvfaccess/
+ 1472  ls
+ 1473  git pull
+ 1474  git branch
+ 1475  cd ..
+ 1476  ls -ltr
+ 1477  rm -rf irisvfaccess/
+ 1478  ls -ltr
+ 1479  git clone https://tools.dct.vodafone.com/gitlab/VF-Enablers/irisvfaccess.git
+ 1480  ls
+ 1481  ls -ltr
+ 1482  cd irisvfaccess/
+ 1483  ls
+ 1484  git branch
+ 1485  git status
+ 1486  git add .
+ 1487  git commit -m"Src folder added"
+ 1488  git status
+ 1489  git push origin/master
+ 1490  git status
+ 1491  git branch
+ 1492  git push
+ 1493  git branch
+ 1494  git mkdir logs
+ 1495  mkdir logs
+ 1496  ls -ltr
+ 1497  git status
+ 1498  git add .
+ 1499  git status
+ 1500  git commit -m"Project added"
+ 1501  git push
+ 1502  ls
+ 1503  vi pom.xml 
+ 1504  find ./ -type f  -exec sed -i "s/iris/irisvfaccess/g" {} \;
+ 1505  find ./ -type f  -exec sed -i "s/IRIS/IRISVFACCESS/g" {} \;
+ 1506  ls
+ 1507  ls -ltr
+ 1508  vi pom.xml 
+ 1509  vi src/main/resources/application.yaml 
+ 1510  git status
+ 1511  git branch
+ 1512  git status
+ 1513  ls
+ 1514  vi .git/index 
+ 1515  cd ..
+ 1516  ls -ltr
+ 1517  rm -rf irisvfaccess
+ 1518  git clone https://tools.dct.vodafone.com/gitlab/VF-Enablers/irisvfaccess.git
+ 1519  ls
+ 1520  cd irisvfaccess/
+ 1521  ls
+ 1522  ls -ltr
+ 1523  find ./ -type f  -exec sed -i "s/IRIS/IRISVFACCESS/g" {} \;
+ 1524  find ./ -type f  -exec sed -i "s/iris/irisvfaccess/g" {} \;
+ 1525  git status
+ 1526  vi .git/info/
+ 1527  vi .git/info/exclude 
+ 1528  cd .git/
+ 1529  ls
+ 1530  ls -ltr
+ 1531  vi index 
+ 1532  rm -rf index 
+ 1533  ls
+ 1534  git status
+ 1535  cd ..
+ 1536  git status
+ 1537  git add .
+ 1538  git status
+ 1539  git commit -m"Project added"
+ 1540  git push
+ 1541  ls
+ 1542  cd .git/
+ 1543  ls -ltr
+ 1544  cat index 
+ 1545  vi index 
+ 1546  cd ..
+ 1547  ls -ltr
+ 1548  ls -l .git/index 
+ 1549  date
+ 1550  git status
+ 1551  git branch
+ 1552  cd ..
+ 1553  ls -ltr
+ 1554  cd juno/
+ 1555  ls
+ 1556  git status
+ 1557  cd ..
+ 1558  ls
+ 1559  cd irisvfaccess/
+ 1560  ls -lr
+ 1561  vi pom.xml 
+ 1562  git status
+ 1563  git add .
+ 1564  git commit -m"version changed in pom.xml"
+ 1565  git push
+ 1566  cd ..
+ 1567  ls -ltr
+ 1568  rm -rf irisvfaccess/
+ 1569  ls -ltr
+ 1570  cd iris/
+ 1571  cd ..
+ 1572  mkdir niv
+ 1573  ls
+ 1574  cd niv/
+ 1575  ls
+ 1576  cp -r ../iris .
+ 1577  ls
+ 1578  cd iris/
+ 1579  ls
+ 1580  cd .g
+ 1581  cd .git/
+ 1582  ls
+ 1583  cd ../..
+ 1584  ls
+ 1585  cd ../
+ 1586  ls -ltr
+ 1587  cd juno
+ 1588  ls
+ 1589  mkdir ../niv/juno
+ 1590  cp -r * ../niv/juno/
+ 1591  cd ../niv/juno/
+ 1592  ls
+ 1593  ls -ltr
+ 1594  ls -al
+ 1595  cd .gi
+ 1596  ls
+ 1597  find ./ -type f  -exec sed -i "s/JUNO/JUNOVFACCESS/g" {} \;
+ 1598  find ./ -type f  -exec sed -i "s/juno/junovfaccess/g" {} \;
+ 1599  ls
+ 1600  cp -r build-scripts gatling-loadtests influxdb.generated.conf pom.xml src ../../junovfaccess/
+ 1601  ls -al
+ 1602  cd ..
+ 1603  ls -ltr
+ 1604  cd iris/
+ 1605  ls -ltr
+ 1606  ls -al
+ 1607  rm -rf .git
+ 1608  ls -ltra
+ 1609  find ./ -type f  -exec sed -i "s/iris/irisvfaccess/g" {} \;
+ 1610  find ./ -type f  -exec sed -i "s/IRIS/IRISVFACCESS/g" {} \;
+ 1611  ls -ltr
+ 1612  cp -r src influxdb.generated.conf gatling-loadtests build-scripts pom.xml ../../irisvfaccess/
+ 1613  cd ../../junovfaccess/
+ 1614  ls -ltr
+ 1615  vi pom.xml 
+ 1616  git add .
+ 1617  git commit -m"Updated version"
+ 1618  git push 
+ 1619  cd Documents/project/
+ 1620  ls -ltr
+ 1621  cd niv/
+ 1622  ls
+ 1623  cd vfstart_microservices/
+ 1624  ls
+ 1625  git branch
+ 1626  cd manifests/
+ 1627  ls
+ 1628  ls -ltr
+ 1629  git branch
+ 1630  vi irisvfaccess.pp 
+ 1631  vi init.pp 
+ 1632  cd ..
+ 1633  ls
+ 1634  cd templates/
+ 1635  ls -ltr
+ 1636  cd bin/
+ 1637  ls
+ 1638  ls -ltr
+ 1639  git branch
+ 1640  ls -ltr
+ 1641  cp irisctl.conf.erb irisvfaccessctl.conf.erb 
+ 1642  vi irisvfaccessctl.conf.erb 
+ 1643  cd ..
+ 1644  ls -ltr
+ 1645  cp iris.conf.erb irisvfaccess.conf.erb 
+ 1646  vi irisvfaccess.conf.erb 
+ 1647  cat irisvfaccess.conf.erb | grep iris | wc -l
+ 1648  vi irisvfaccess.conf.erb 
+ 1649  cat irisvfaccess.conf.erb | grep iris | wc -l
+ 1650  cat irisvfaccess.conf.erb | grep irisvf | wc -l
+ 1651  git branch
+ 1652  cd bin/
+ 1653  ls
+ 1654  cd ../..
+ 1655  git branch
+ 1656  git status
+ 1657  git pull
+ 1658  git add .
+ 1659  git commit -m"added new files"
+ 1660  git push 
+ 1661  cd Documents/project/
+ 1662  ls
+ 1663  cd irisvfaccess/
+ 1664  ls -ltr
+ 1665  cd src/
+ 1666  ls
+ 1667  cd assemble/
+ 1668  ls
+ 1669  vi assembly.xml 
+ 1670  cd ..
+ 1671  ls
+ 1672  cd main/
+ 1673  ls
+ 1674  cd asciidoc/
+ 1675  ls
+ 1676  ls -ltr
+ 1677  less iris_development.adoc 
+ 1678  !
+ 1679  mv iris_release_management.adoc irisvfaccess_release_management.adoc
+ 1680  git status
+ 1681  mv iris_operations.adoc irisvfaccess_operations.adoc
+ 1682  mv iris_index.asciidoc irisvfaccess_index.asciidoc
+ 1683  mv iris_development.adoc irisvfaccess_development.adoc
+ 1684  cd ..
+ 1685  ls
+ 1686  cd groovy/
+ 1687  ls
+ 1688  cd asciidoc2confluence/
+ 1689  ls
+ 1690  cd ..
+ 1691  ls
+ 1692  cd java/
+ 1693  ls
+ 1694  cd com/vodafone/global/vfstart/
+ 1695  ls
+ 1696  cd iris/
+ 1697  ls
+ 1698  cd ../../../
+ 1699  ls
+ 1700  cd global/
+ 1701  ls
+ 1702  cd vfstart/iris/
+ 1703  ls
+ 1704  cd ..
+ 1705  ls -ltr
+ 1706  mv iris irisvfaccess
+ 1707  ls
+ 1708  cd irisvfaccess/
+ 1709  ls
+ 1710  cd juno/
+ 1711  ls
+ 1712  cd api/
+ 1713  ls
+ 1714  cd ../..
+ 1715  ls
+ 1716  cd home/
+ 1717  ls
+ 1718  cd web/
+ 1719  ls
+ 1720  cd ../../..
+ 1721  ls
+ 1722  cd ../../../..
+ 1723  cd ..
+ 1724  ls
+ 1725  cd resources/
+ 1726  ls
+ 1727  cd shell/
+ 1728  ls
+ 1729  mv iris.conf.erb irisvfaccess.conf.erb 
+ 1730  mv irisctl.sh irisvfaccessctl.sh
+ 1731  mv plex_irisctl.sh plex_irisvfaccessctl.sh
+ 1732  ls -ltr
+ 1733  cd ..
+ 1734  ls
+ 1735  cd samples/
+ 1736  ls
+ 1737  cd ../static/
+ 1738  ls
+ 1739  cd css/
+ 1740  ls
+ 1741  cd ../..
+ 1742  ls
+ 1743  cd META-INF/
+ 1744  ls
+ 1745  cd ../templates/
+ 1746  ls
+ 1747  cd ..
+ 1748  ls
+ 1749  cd ..
+ 1750  ls
+ 1751  cd ..
+ 1752  ls
+ 1753  cd test/
+ 1754  ls
+ 1755  cd java/
+ 1756  ls
+ 1757  cd com/vodafone/global/vfstart/
+ 1758  ls
+ 1759  mv iris irisvfaccess
+ 1760  ls
+ 1761  cd irisvfaccess/
+ 1762  ls
+ 1763  cd ..
+ 1764  ls
+ 1765  cd ..
+ 1766  ls
+ 1767  cd ../../..
+ 1768  ls
+ 1769  cd ..
+ 1770  ls
+ 1771  cd resources/
+ 1772  ls
+ 1773  cd ..
+ 1774  cd ../..
+ 1775  ls
+ 1776  cd build-scripts/
+ 1777  ls
+ 1778  cd ..
+ 1779  ls
+ 1780  cd gatling-loadtests/
+ 1781  l
+ 1782  ls
+ 1783  cd bodies/
+ 1784  ls
+ 1785  cd ../simulations/
+ 1786  ls
+ 1787  cd com/vodafone/global/vfstart/
+ 1788  ls
+ 1789  cd loadtest/
+ 1790  ls
+ 1791  cd ../../../../..
+ 1792  ls
+ 1793  cd ../..
+ 1794  ls
+ 1795  git status
+ 1796  git add .
+ 1797  git status
+ 1798  git commit -m"Updated project name"
+ 1799  git status
+ 1800  git pull
+ 1801  ls
+ 1802  git push
+ 1803  ls
+ 1804  vi pom.xml 
+ 1805  cd ../iris
+ 1806  ls
+ 1807  cd ../irisvfaccess/
+ 1808  ls
+ 1809  vi pom.xml 
+ 1810  cat pom.xml | grep vfstart
+ 1811  cat pom.xml | grep vfaccess
+ 1812  git status
+ 1813  git pull
+ 1814  git push
+ 1815  git add .
+ 1816  git status
+ 1817  git commit -m"UPdated pom.xml"
+ 1818  git status
+ 1819  git push
+ 1820  cd src/main/resources/
+ 1821  ls
+ 1822  cd ../..
+ 1823  ls
+ 1824  cd assemble/
+ 1825  ls
+ 1826  vi assembly.xml 
+ 1827  diff assembly.xml ../../../iris/src/assemble/assembly.xml 
+ 1828  dcd 
+ 1829  cd
+ 1830  cd Documents/project/
+ 1831  ls
+ 1832  cd puppet-control/
+ 1833  ls
+ 1834  git pull
+ 1835  ls
+ 1836  cd hieradata/
+ 1837  ls
+ 1838  cd nodes/
+ 1839  ls
+ 1840  cd ../..
+ 1841  ls
+ 1842  ls -ltr
+ 1843  git branch
+ 1844  cd ..
+ 1845  ls
+ 1846  cd niv/
+ 1847  ls
+ 1848  git clone -b startdev https://tools.dct.vodafone.com/gitlab/infra/puppet-control.git
+ 1849  ls
+ 1850  cd puppet-control/
+ 1851  ls
+ 1852  git branch
+ 1853  git pull
+ 1854  ls
+ 1855  cd hieradata/
+ 1856  ls
+ 1857  cd preprod/
+ 1858  ls
+ 1859  cd startdev/
+ 1860  ls
+ 1861  ls -ltr
+ 1862  vi start::microservices-vfaccess2.yaml
+ 1863  ls -ltr
+ 1864  vi start::microservices-vfaccess2.yaml
+ 1865  vi start::microservices-vfaccess1.yaml
+ 1866  vi start::microservices-sigma.yaml
+ 1867  git status
+ 1868  vi start::microservices-omega.yaml
+ 1869  vi start::microservices-mst.yaml
+ 1870  vi start::microservices-dit.yaml
+ 1871  vi start::microservices-devqa.yaml
+ 1872  vi start::microservices-demo.yaml
+ 1873  vi  start::microservices-delta.yaml
+ 1874  vi start::microservices-beta.yaml
+ 1875  vi start::microservices-alpha.yaml
+ 1876  ls -ltr
+ 1877  ls -ltr | wc -l
+ 1878  cat * | grep irisvfaccess
+ 1879  cat * | grep irisvfaccess | wc -l
+ 1880  ls -ltr | wc -l
+ 1881  ls -l
+ 1882  vi start::microservices-vfaccess1.yaml
+ 1883  git status
+ 1884  git add .
+ 1885  git commit -m"New service added"
+ 1886  git pull
+ 1887  git status
+ 1888  git push
+ 1889  git status
+ 1890  cd ..
+ 1891  ls
+ 1892  cd ..
+ 1893  ls
+ 1894  cd ..
+ 1895  ls
+ 1896  cd ..
+ 1897  ls
+ 1898  ls -ltr
+ 1899  cd puppet-control/
+ 1900  ls
+ 1901  cd manifests/
+ 1902  ls
+ 1903  cd ../hieradata/
+ 1904  ls
+ 1905  cd preprod/
+ 1906  ls
+ 1907  cd startdev/
+ 1908  ls
+ 1909  ls -ltr
+ 1910  git status
+ 1911  cd ../../../..
+ 1912  ls
+ 1913  git clone -b startdev https://tools.dct.vodafone.com/gitlab/infra/puppet-modules/vfstart_microservices.git
+ 1914  ls
+ 1915  cd puppet-control/
+ 1916  ls
+ 1917  git branch
+ 1918  cd ..
+ 1919  ls
+ 1920  cd puppet-control/
+ 1921  ls
+ 1922  git status
+ 1923  git branch
+ 1924  cd ..
+ 1925  ls
+ 1926  cd ..
+ 1927  ls
+ 1928  ls -ltr
+ 1929  cd niv/
+ 1930  ls
+ 1931  ls -ltr
+ 1932  mkdir vfs_mic_master
+ 1933  cd vfs_mic_master/
+ 1934  git clone  https://tools.dct.vodafone.com/gitlab/infra/puppet-modules/vfstart_microservices.git
+ 1935  ls
+ 1936  cd vfstart_microservices/
+ 1937  ls
+ 1938  git branch
+ 1939  cd files/
+ 1940  ls -ltr
+ 1941  cd ../manifests/
+ 1942  ls -ltr
+ 1943  git branch
+ 1944  vi init.pp 
+ 1945  df -kh
+ 1946  cd Desktop/
+ 1947  ls
+ 1948  du -sh backup2018
+ 1949  cd backup2018/
+ 1950  du -sh *
+ 1951  cd DevOps2018/
+ 1952  ls
+ 1953  du -sh *
+ 1954  cd NI
+ 1955  cd Niv/
+ 1956  ls
+ 1957  du -sh *
+ 1958  cd London2018/
+ 1959  ls
+ 1960  du -sh *
+ 1961  cd ../..
+ 1962  ks
+ 1963  ls
+ 1964  cd ..
+ 1965  du -sh *
+ 1966  cd DevOps2018/
+ 1967  ls
+ 1968  du -sh *
+ 1969  cd Niv/
+ 1970  ls
+ 1971  du -sh *
+ 1972  cd Photos/
+ 1973  ls
+ 1974  du -sh *
+ 1975  ls
+ 1976  cd ..
+ 1977  du -sh *
+ 1978  df -kh
+ 1979  cd /media/vfroot/945A45F45A45D3A0/
+ 1980  du -sh *
+ 1981  cd ..
+ 1982  du -sh *
+ 1983  df -kh
+ 1984  cd
+ 1985  cd Desktop/
+ 1986  ls
+ 1987  cd backup2018/
+ 1988  du -sh *
+ 1989  cd DevOps2018/
+ 1990  ls
+ 1991  du -sh *
+ 1992  cd Niv/
+ 1993  du -sh *
+ 1994  df -kh 
+ 1995  cd ../..
+ 1996  du -sh *
+ 1997  df -kh 
+ 1998  mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000" "/dev/sdb1" "/media/vfroot/945A45F45A45D3A0
+ 1999  mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000" "/dev/sdb1" "/media/vfroot/945A45F45A45D3A0"
+ 2000  sudo mount -t "ntfs" -o "uhelper=udisks2,nodev,nosuid,uid=1000,gid=1000" "/dev/sdb1" "/media/vfroot/945A45F45A45D3A0"
+ 2001  cd Documents/project/
+ 2002  ls
+ 2003  cd irisvfaccess/
+ 2004  ls
+ 2005  git pull
+ 2006  ls
+ 2007  cd src/main/java/
+ 2008  ls
+ 2009  cd com/vodafone/
+ 2010  ls
+ 2011  cd global/
+ 2012  ls
+ 2013  mv vfstart vfaccess
+ 2014  ls
+ 2015  cd vfaccess/
+ 2016  ls
+ 2017  cd irisvfaccess/
+ 2018  ls
+ 2019  vi Application.java 
+ 2020  cd ../../../
+ 2021  cd ../../..
+ 2022  ls
+ 2023  git status
+ 2024  git add .
+ 2025  git commit -m"Upted parent class"
+ 2026  git status
+ 2027  git push
+ 2028  git status
+ 2029  cd java/
+ 2030  ls
+ 2031  cd com/vodafone/global/
+ 2032  ls
+ 2033  cd vfaccess/
+ 2034  ls
+ 2035  cd irisvfaccess/
+ 2036  ls
+ 2037  find ./ -type f | xargs grep -i vfstart
+ 2038  find ./ -type f  -exec sed -i "s/iris/irisvfaccess/g" {} \;
+ 2039  find ./ -type f  -exec sed -i "s/IRIS/IRISVFACCESS/g" {} \;
+ 2040  find ./ -type f | xargs grep -i vfstart
+ 2041  find ./ -name | xargs grep -i vfstart
+ 2042  sed -i 's@vfstart@vfaccess@g'
+ 2043  sed -i 's@vfstart@vfaccess@g' *
+ 2044  find ./ -name | xargs grep -i vfstart
+ 2045  find ./ -type f | xargs grep -i vfstart
+ 2046  find ./ -type f -name "*.java"  -exec sed -i "s/iris/irisvfaccess/g" {} \;
+ 2047  find ./ -name | xargs grep -i vfstart
+ 2048  find ./ -type f | xargs grep -i vfstart
+ 2049  find . -type f -name "*.java"  -exec sed -i 's:iris:irisvfaccess:g'  {} \;
+ 2050  find ./ -type f | xargs grep -i vfstart
+ 2051  find . -type f -name "*.java"  -exec sed -i 's:global.vfstart:global.vfaccess:g'  {} \;
+ 2052  find ./ -type f | xargs grep -i vfstart
+ 2053  find ./ -type f | xargs grep -i vfaccess
+ 2054  find ./ -type f | xargs grep -i vfstart
+ 2055  find . -type f -name "*.java"  -exec sed -i 's:vfstart:vfaccess:g'  {} \;
+ 2056  find ./ -type f | xargs grep -i vfstart
+ 2057  cd ../../../..
+ 2058  git status
+ 2059  git add .
+ 2060  git commit -m"updated name to vfaccess" 
+ 2061  git branch
+ 2062  git push
+ 2063  cd
+ 2064  cd -
+ 2065  git status
+ 2066  history > history.txt

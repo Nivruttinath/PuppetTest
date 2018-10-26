@@ -1,0 +1,33 @@
+GitLab installation steps 
+Guidelines : https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-gitlab-on-ubuntu-16-04
+
+Prerequisites : 
+. 2 cores
+. 4GB of RAM
+
+Installing the Dependencies :
+Since this is our first time using apt during this session, we can refresh the local package index and then install the dependencies by typing:
+# sudo apt-get update
+# sudo apt-get install ca-certificates curl openssh-server postfix
+You will likely have some of this software installed already. For the postfix installation, select Internet Site when prompted. On the next screen, enter your server's domain name or IP address to configure how the system will send mail.
+
+Installing GitLab :
+Move into the /tmp directory and then download the installation script:
+# cd /tmp
+# curl -LO https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh
+Run the installer 
+# sudo bash /tmp/script.deb.sh
+The script will set up your server to use the GitLab maintained repositories. Now start the actual gitlab application installation process.
+# sudo apt-get install gitlab-ce
+
+Editing the GitLab Configuration File :
+Before you can use the application, you need update one configuration file and run a reconfiguration command. First, open Gitlab's configuration file:
+# sudo vi /etc/gitlab/gitlab.rb
+Near the top is the external_url configuration line. Update it to match your own domain or IP address. 
+
+Now, run the following command to reconfigure Gitlab:
+# sudo gitlab-ctl reconfigure
+
+http://127.0.0.1
+root
+Let$doit! 

@@ -1,0 +1,62 @@
+Dockerfile 
+FROM tools.dct.vodafone.com:50443/vfstart/jdk/vf-start-jdk8:1.0
+
+USER app
+
+ARG TOOLS_USER
+ARG TOOLS_PASSWORD
+
+
+ENV SP_HOME /opt/SP
+ENV PATH $PATH:$JAVA_HOME/bin
+
+COPY wrapper.sh /home/app/wrapper.sh
+
+RUN mkdir -p ${SP_HOME}/log  && \
+  wget -O - --user ${TOOLS_USER} --password ${TOOLS_PASSWORD} https://tools.dct.vodafone.com/releases/DEV/com/vodafone/global/vfaccess/sher/0.0.1-build43/sher-0.0.1-build43.tar.gz | tar zxf - -C ${SP_HOME} && \
+  cp /home/app/wrapper.sh ${SP_HOME}/wrapper.sh && \
+  chmod 755 ${SP_HOME}/wrapper.sh
+
+WORKDIR ${SP_HOME}/
+
+CMD ["/opt/SP/wrapper.sh"]
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+wrapper.sh 
+#!/bin/sh
+
+$JAVA_HOME/bin/java -server -Xms256m -Xmx256m -XX:MaxMetaspaceSize=128m -XX:ParallelGCThreads=16 -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:CMSInitiatingOccupancyFraction=75 -XX:SurvivorRatio=8 -XX:TargetSurvivorRatio=90 -Dfile.encoding=UTF-8 -Dsun.net.client.defaultConnectTimeout=3000 -Djava.awt.headless=true -Dcom.sun.net.ssl.enableECC=false -jar ${SP_HOME}/bin/sher.jar --spring.profiles.active=vfaccess1 --spring.config.location=${SP_HOME}/cfg/ --logging.config=${SP_HOME}/cfg/log4j2.xml
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+vfroot@niv:~/Desktop/sher$ sudo docker build --build-arg TOOLS_USER=jenkins --build-arg TOOLS_PASSWORD=starbuck.100  . -t sher
+
+sudo docker run --name vfaccess-sher -p 9930:9930 sher
+
+sudo docker run --name vfaccess-sher2 -p 9930:9930 -d sher
+
+sudo docker exec -it b950f06ee0e7 /bin/sh
+
+sudo docker build --build-arg TOOLS_USER=jenkins --build-arg TOOLS_PASSWORD=starbuck.100 --build-arg TAR_PREFIX=0.0.1-build46 --build-arg TAR_NAME=sher-0.0.1-build63 . -t  sher-test
+
+sudo docker run --name kube-sher  -p 8030:8080 -d sher-test
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2250  kubectl --namespace da-dev get pods
+ 2251  kubectl  get pods
+ 2252  kubectl  get pods --namespace da-dev
+ 2253  kubectl exec -n=sher -it sher-deployment-75b7fb48db-bb4zv bash
+ 2254  kubectl exec --namespace da-dev -it sher-deployment-75b7fb48db-bb4zv bash
+ 2255  kubectl exec --namespace da-dev -n=sher -it sher-deployment-75b7fb48db-bb4zv bash
+ 2256  kubectl  get pods sher-deployment-75b7fb48db-bb4zv
+ 2257  kubectl  get pods --namespace da-dev sher-deployment-75b7fb48db-bb4zv
+
+kubectl exec --namespace da-dev -it sqlplus-d4bc7685b-szhzh sh
+alter session set ddl_lock_timeout=300;
+
+
+

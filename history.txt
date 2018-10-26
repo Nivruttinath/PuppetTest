@@ -1,0 +1,1000 @@
+ 1130  ls-ltr
+ 1131  ls -ltr
+ 1132  vi pull_translations.sh 
+ 1133  vi update_translations.sh 
+ 1134  vi prepare_translations.sh 
+ 1135  vi publish_vfaccessTranslations.sh 
+ 1136  cd ..
+ 1137  git status
+ 1138  git add bin/publish_vfaccessTranslations.sh 
+ 1139  git status 
+ 1140  git commit -m"Script updated to add transifex in webdav"
+ 1141  git status
+ 1142  git push origin develop
+ 1143  git pull origin develop
+ 1144  git push origin develop
+ 1145  cd bin/
+ 1146  ls -ltr
+ 1147  mv publish_vfaccessTranslations.sh publish_vfaccessWebappTranslations.sh
+ 1148  git status
+ 1149  git add .
+ 1150  git commit -m"Filename updated"
+ 1151  git push origin develop
+ 1152  ls -ltr
+ 1153  cd ..
+ 1154  ls -ltr
+ 1155  cd init/
+ 1156  ls
+ 1157  git status
+ 1158  cd ../bin/
+ 1159  ls
+ 1160  vi update_translations.sh 
+ 1161  vi prepare_translations.sh 
+ 1162  vi update_translations.sh 
+ 1163  cd ..
+ 1164  ls
+ 1165  cd init/
+ 1166  ls -ltr
+ 1167  ls
+ 1168  cd ..
+ 1169  cd init/
+ 1170  ls
+ 1171  cd ..
+ 1172  ls -ltr
+ 1173  cd init/
+ 1174  ls
+ 1175  cd ../bin/
+ 1176  ls -ltr
+ 1177  vi update_translations.sh 
+ 1178  git status
+ 1179  git add .
+ 1180  git commit -m"Path updated in update_translations.sh"
+ 1181  git status
+ 1182  git push origin develop
+ 1183  git status
+ 1184  cd ..
+ 1185  cd init/
+ 1186  ls
+ 1187  cd ..
+ 1188  ls -ltr
+ 1189  cd ..
+ 1190  ls
+ 1191  cd transifex/
+ 1192  ls
+ 1193  cd bin/
+ 1194  ls
+ 1195  vi update_translations.sh 
+ 1196  cd ..
+ 1197  ls
+ 1198  cd init/
+ 1199  ls
+ 1200  git pull origin develop
+ 1201  ls -ltr
+ 1202  cd ..
+ 1203  ls
+ 1204  cd ..
+ 1205  ls
+ 1206  cd -
+ 1207  ls
+ 1208  cd ./init/
+ 1209  pwd
+ 1210  ls
+ 1211  vi ../bin/update_translations.sh 
+ 1212  cd ..
+ 1213  ls -l ./init/
+ 1214  vi bin/publish_vfaccessWebappTranslations.sh 
+ 1215  git status
+ 1216  git add bin/update_translations.sh 
+ 1217  git status
+ 1218  git push origin develop
+ 1219  git status
+ 1220  git push origin develop
+ 1221  git pull orign develop
+ 1222  git pull origin develop
+ 1223  cd bin/
+ 1224  git status
+ 1225  git commit -m"Updated update_translations.sh"
+ 1226  git push origin develop
+ 1227  cd ../init/
+ 1228  ls -ltr
+ 1229  git pull origin develop
+ 1230  ls -ltr
+ 1231  cd ../..
+ 1232  ls
+ 1233  git status
+ 1234  cd transifex/
+ 1235  cd init/
+ 1236  ls -ltr
+ 1237  cd ..
+ 1238  ls
+ 1239  ls -al
+ 1240  cd .tx/
+ 1241  ls
+ 1242  vi config 
+ 1243  cd ../init/
+ 1244  ls
+ 1245  ls -ltr
+ 1246  less translations_de_DE.json 
+ 1247  cd ../../..
+ 1248  ls
+ 1249  cd SeeTest_Automation/
+ 1250  ls
+ 1251  git status
+ 1252  git checkout develop
+ 1253  git branch
+ 1254  ls -ltr
+ 1255  git status
+ 1256  git pull origin develop
+ 1257  ls -ltr
+ 1258  cd src/main/resources/
+ 1259  ls
+ 1260  ls -ltr
+ 1261  cd Documents/
+ 1262  ls
+ 1263  cd project/
+ 1264  ls
+ 1265  cd tiger
+ 1266  ls
+ 1267  cd //
+ 1268  cd -
+ 1269  ls
+ 1270  cd ..
+ 1271  ls
+ 1272  cd niv/
+ 1273  ls
+ 1274  cd ..
+ 1275  ls
+ 1276  git clone  https://tools.dct.vodafone.com/gitlab/VF-Enablers/sher.git 
+ 1277  ls
+ 1278  cd sher/
+ 1279  ls
+ 1280  git branch
+ 1281  git branch -a
+ 1282  git branch
+ 1283  git checkout build-job
+ 1284  git branch
+ 1285  ls
+ 1286  ls -ltr
+ 1287  git checkout master
+ 1288  ls
+ 1289  git checkout build-job
+ 1290  git branch
+ 1291  git merge master
+ 1292  ls
+ 1293  git branch
+ 1294  git status
+ 1295  git checkout master
+ 1296  ls
+ 1297  git status
+ 1298  ls
+ 1299  git checkout build-job
+ 1300  git status
+ 1301  git branch
+ 1302  git push origin build-job
+ 1303  git status
+ 1304  cd ..
+ 1305  ls
+ 1306  cd SeeTest_Automation/
+ 1307  ls
+ 1308  git status
+ 1309  git checkout master
+ 1310  ls
+ 1311  du -sh *
+ 1312  rm -rf *
+ 1313  git status
+ 1314  git push origin master
+ 1315  git branch
+ 1316  git checkout develop
+ 1317  git status
+ 1318  ls
+ 1319  git pull origin develop
+ 1320  ls -ltr
+ 1321  git status
+ 1322  git branch
+ 1323  git checkout master
+ 1324  ls
+ 1325  git status
+ 1326  git merge develop
+ 1327  ls -l target/test-classes/com/vodafone/vodafoneEnabler/stepdefs/AccessStepDef.class 
+ 1328  ls
+ 1329  rm -rf *
+ 1330  git status
+ 1331  ls
+ 1332  git status
+ 1333  git branch
+ 1334  git push origin master
+ 1335  ls
+ 1336  git merge develop
+ 1337  git rm *
+ 1338  git status
+ 1339  git commit -m"Code cleanup"
+ 1340  git push origin master
+ 1341  git merge develop
+ 1342  ls
+ 1343  git branch
+ 1344  git checkout develop
+ 1345  ls
+ 1346  vi Testing 
+ 1347  git status
+ 1348  git add Testing 
+ 1349  git commit -m"Test file updated"
+ 1350  git status
+ 1351  git push origin develop
+ 1352  ls -ltr
+ 1353  git checkout master
+ 1354  git branch
+ 1355  git merge develop
+ 1356  git branch
+ 1357  git branch -m master master-old
+ 1358  git branch
+ 1359  git push origin :master
+ 1360  git branch
+ 1361  git push origin master-old
+ 1362  git branch
+ 1363  git checkout -b master develop
+ 1364  git status
+ 1365  git commit -M"update"
+ 1366  git commit -m"update"
+ 1367  git add Testing 
+ 1368  git commit -m"update"
+ 1369  git checkout -b master develop
+ 1370  git status
+ 1371  git branch
+ 1372  ls -ltr
+ 1373  vi Testing 
+ 1374  git status
+ 1375  git checkout develop
+ 1376  git status
+ 1377  ls
+ 1378  ls -ltr
+ 1379  git status
+ 1380  git branch
+ 1381  git checkout master
+ 1382  ls
+ 1383  git status
+ 1384  git push origin master
+ 1385  git branch
+ 1386  git pull origin master
+ 1387  git status
+ 1388  git branch
+ 1389  git add .
+ 1390  git status
+ 1391  cd ..
+ 1392  ls -ltr
+ 1393  ls
+ 1394  cd tiger
+ 1395  ls
+ 1396  git branch
+ 1397  git pull origin develop
+ 1398  ls -ltr
+ 1399  date
+ 1400  git log | less
+ 1401  cd ..
+ 1402  ls
+ 1403  cd tiger_web/
+ 1404  ls
+ 1405  ls -ltr
+ 1406  git branch
+ 1407  git pull origin develop
+ 1408  ls -ltr
+ 1409  git log  | less
+ 1410  cd
+ 1411  java -version
+ 1412  cd
+ 1413  sudo docker version
+ 1414  sudo uname -a
+ 1415  uname -a
+ 1416  uname -n
+ 1417  uname -m
+ 1418  uname -r
+ 1419  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+ 1420  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+ 1421  sudo apt-get update
+ 1422  apt-cache policy docker-ce
+ 1423  sudo apt-get install -y docker-ce
+ 1424  sudo systemctl status docker
+ 1425  docker -version
+ 1426  docker --version
+ 1427  cat /etc/group
+ 1428  echo $USER
+ 1429  whoami
+ 1430  systemctl status docker
+ 1431  id -nG
+ 1432  docker info
+ 1433  sudo docker info
+ 1434  java --version
+ 1435  java -version
+ 1436  which java
+ 1437  echo $PATH
+ 1438  mkdir /opt/gradle
+ 1439  sudo mkdir /opt/gradle
+ 1440  kdsajf
+ 1441  sudo mkdir /opt/gradle
+ 1442  cd Documents/DevOps/GradleStudy/
+ 1443  ls
+ 1444  unzip -d /opt/gradle gradle-4.4-all.zip 
+ 1445  sudo unzip -d /opt/gradle gradle-4.4-all.zip 
+ 1446  cd /opt/gradle/
+ 1447  ls
+ 1448  ls gradle-4.4/
+ 1449  mv gradle-4.4/* .
+ 1450  sudo mv gradle-4.4/* .
+ 1451  ls
+ 1452  rm gradle-4.4/
+ 1453  rmdir gradle-4.4/
+ 1454  sudo rmdir gradle-4.4/
+ 1455  ls
+ 1456  sudo rmdir gradle-4.4/
+ 1457  ls
+ 1458  sudo export GRADLE_HOME=/opt/gradle/
+ 1459  export GRADLE_HOME=/opt/gradle/
+ 1460  export PATH=$PATH:$GRADLE_HOME/bin
+ 1461  export $PATH
+ 1462  echo $PATH
+ 1463  export GRADLE_HOME=/opt/gradle
+ 1464  export PATH=$PATH:$GRADLE_HOME/bin
+ 1465  echo $PATH
+ 1466  sudo su -
+ 1467  export PATH=$PATH:$GRADLE_HOME/bin
+ 1468  echo $PATH
+ 1469  gradle -v
+ 1470  java -version
+ 1471  gradle --version
+ 1472  echo $PATH
+ 1473  cd
+ 1474  cd Documents/DevOps/
+ 1475  ls
+ 1476  echo $PATH > path.txt
+ 1477  cat path.txt 
+ 1478  c
+ 1479  cd
+ 1480  vi .profile 
+ 1481  sudo us - 
+ 1482  sudo su - 
+ 1483  vi .profile 
+ 1484  cat .bashrc 
+ 1485  vi .bashrc 
+ 1486  cat .bashrc 
+ 1487  cat .profile 
+ 1488  echo $PATH
+ 1489  export PATH=/home/vfroot/bin:/home/vfroot/.local/bin:/opt/SP/gradle-4.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/opt/gradle/bin
+ 1490  echo $PATH
+ 1491  gradle --version
+ 1492  ls
+ 1493  gradle --version
+ 1494  echo $PATH
+ 1495  java --version
+ 1496  java -version
+ 1497  java --version
+ 1498  java -version
+ 1499  echo $PATH
+ 1500  java -version
+ 1501  echo $PATH
+ 1502  gradle -v
+ 1503  gradle hello world
+ 1504  gradle --stop
+ 1505  gradle -v
+ 1506  gradle --status
+ 1507  cd Documents/DevOps/
+ 1508  ls
+ 1509  cd GradleStudy/
+ 1510  ls
+ 1511  mkdir basic-demo
+ 1512  rm -rf basic-demo/
+ 1513  ls
+ 1514  mkdir basic-demo
+ 1515  cd basic-demo/
+ 1516  ls
+ 1517  cd ..
+ 1518  ls
+ 1519  rm -rf basic-demo/
+ 1520  ls
+ 1521  mkdir basic-demo
+ 1522  cd basic-demo/
+ 1523  ls
+ 1524  gradle init
+ 1525  gradle --status
+ 1526  ls
+ 1527  ls -ltr
+ 1528  cat build.gradle 
+ 1529  ls
+ 1530  mkdir src
+ 1531  touch src/myfile.txt
+ 1532  vi src/myfile.txt 
+ 1533  ls
+ 1534  vi build.gradle 
+ 1535  ls -ltr
+ 1536  vi build.gradle 
+ 1537  ls
+ 1538  cd gradle/
+ 1539  ls
+ 1540  cd ..
+ 1541  ls
+ 1542  ./gradlew copy
+ 1543  ls -ltr
+ 1544  date
+ 1545  cd src/
+ 1546  ls
+ 1547  less myfile.txt 
+ 1548  cd ..
+ 1549  ls
+ 1550  vi build.gradle 
+ 1551  ./gradlew hello
+ 1552  gradle -version
+ 1553  /opt/gradle/bin/gradle hello
+ 1554  ls
+ 1555  vi build.gradle 
+ 1556  vi copy
+ 1557  /opt/gradle/bin/gradle copy
+ 1558  ls
+ 1559  cd dest/
+ 1560  ls
+ 1561  cat myfile.txt 
+ 1562  vi build.gradle 
+ 1563  cd ..
+ 1564  ls
+ 1565  vi build.gradle 
+ 1566  /opt/gradle/bin/gradle hello
+ 1567  cd Documents/DevOps/GradleStudy/
+ 1568  ls
+ 1569  cd basic-demo/
+ 1570  ls
+ 1571  /opt/gradle/bin/gradle hello
+ 1572  /opt/gradle/bin/gradle copy
+ 1573  ls -ltr
+ 1574  rm -rf dest
+ 1575  ls -ltr
+ 1576  /opt/gradle/bin/gradle hello
+ 1577  /opt/gradle/bin/gradle copy
+ 1578  ls -ltr
+ 1579  cd Documents/DevOps/GradleStudy/
+ 1580  ls
+ 1581  cd basic-demo/
+ 1582  ls
+ 1583  rm -rf dest/
+ 1584  ls
+ 1585  gradle -version
+ 1586  gradle hello
+ 1587  gradle copy
+ 1588  ls -ltr
+ 1589  cd gradle/
+ 1590  ls
+ 1591  cd wrapper/
+ 1592  ls
+ 1593  cd
+ 1594  cd Documents/DevOps/GradleStudy/
+ 1595  ls
+ 1596  cd basic-demo/
+ 1597  ls
+ 1598  rm -rf dest/
+ 1599  ls
+ 1600  gradle hello
+ 1601  gradle copy
+ 1602  ls -ltr
+ 1603  cd
+ 1604  cd Documents/DevOps/GradleStudy/
+ 1605  ls
+ 1606  cd basic-demo/
+ 1607  ls -ltr
+ 1608  rm -rf dest/
+ 1609  ls
+ 1610  gradle hello
+ 1611  gradle copyu
+ 1612  gradle hello
+ 1613  gradle copy
+ 1614  ls -ltr
+ 1615  cd Documents/project/
+ 1616  ls
+ 1617  cd SeeTest_Automation/
+ 1618  ls
+ 1619  ls -ltr
+ 1620  cp links.txt ../niv/SeeTest_Automation/
+ 1621  git branch
+ 1622  ls
+ 1623  cp -r * ../niv/SeeTest_Automation/
+ 1624  cd ..
+ 1625  ls -ltr
+ 1626  cd niv/
+ 1627  ls
+ 1628  cd ..l
+ 1629  cd ..
+ 1630  ls
+ 1631  rm -rf SeeTest_Automation/
+ 1632  ls
+ 1633  cd
+ 1634  cd -
+ 1635  cd
+ 1636  cd Documents/DevOps/
+ 1637  ls
+ 1638  cd ..
+ 1639  ls
+ 1640  cd project/
+ 1641  ls
+ 1642  cd sher/
+ 1643  ls
+ 1644  git branch
+ 1645  git checkout master
+ 1646  git branch
+ 1647  git pull origin master
+ 1648  git branch
+ 1649  git checkout build-job
+ 1650  git status
+ 1651  git log
+ 1652  ls -ltr
+ 1653  git merge master
+ 1654  git status
+ 1655  git push origin build-job
+ 1656  git status
+ 1657  cd ..
+ 1658  ls
+ 1659  cd SeeTest_Automation/
+ 1660  ls
+ 1661  ls -ltr
+ 1662  svn branch
+ 1663  git branch
+ 1664  git checkout develop
+ 1665  git branch
+ 1666  git status
+ 1667  git pull origin develop
+ 1668  cd ..
+ 1669  ls -ltr
+ 1670  rm -rf  SeeTest_Automation/
+ 1671  ls -ltr
+ 1672  git clone -b develop https://tools.dct.vodafone.com/gitlab/VF-Enablers/SeeTest_Automation.git
+ 1673  ls
+ 1674  cd SeeTest_Automation/
+ 1675  ls -ltr
+ 1676  git status
+ 1677  git branch
+ 1678  ls
+ 1679  ls -ltr
+ 1680  cd ..
+ 1681  ls
+ 1682  mkdir niv
+ 1683  cd niv/
+ 1684  ls
+ 1685  git clone  https://tools.dct.vodafone.com/gitlab/VF-Enablers/SeeTest_Automation.git
+ 1686  ls
+ 1687  cd SeeTest_Automation/
+ 1688  ls
+ 1689  ls -ltr
+ 1690  git branch
+ 1691  git status
+ 1692  ls
+ 1693  ls -ltr
+ 1694  git status
+ 1695  git add .
+ 1696  git status
+ 1697  git push origin master
+ 1698  git status
+ 1699  git push origin master
+ 1700  git add .
+ 1701  git status
+ 1702  git commit -m"Added data"
+ 1703  git push origin master
+ 1704  ls
+ 1705  git branch
+ 1706  git checkout develop
+ 1707  git status
+ 1708  git branch develop
+ 1709  git branch
+ 1710  git checkout develop
+ 1711  l
+ 1712  ls
+ 1713  ls -ltr
+ 1714  cd src/test/resources/
+ 1715  ls
+ 1716  cd cucumber/vodafoneEnablers/
+ 1717  ls
+ 1718  ls -ltr
+ 1719  git log ErrorVerification.feature | less
+ 1720  less ErrorVerification.feature 
+ 1721  cd ..
+ 1722  ls
+ 1723  cd ..
+ 1724  cd ../../..
+ 1725  ls
+ 1726  ls -ltr
+ 1727  git branch
+ 1728  ls
+ 1729  gi Testing 
+ 1730  vi Testing 
+ 1731  git status
+ 1732  git add Testing 
+ 1733  git commit -m"Updated testing file"
+ 1734  git status
+ 1735  git push origin develop
+ 1736  git status
+ 1737  ls
+ 1738  git branch
+ 1739  git pull origin develop
+ 1740  ls
+ 1741  cd src/test/java/com/vodafone/start/cucumber/selenium/
+ 1742  ls
+ 1743  cd stepdefs/
+ 1744  ls -ltr
+ 1745  vi TestContext.java 
+ 1746  date
+ 1747  ls -ltr
+ 1748  cd
+ 1749  cd Documents/project/niv/SeeTest_Automation/
+ 1750  ls
+ 1751  git status
+ 1752  git branch
+ 1753  git checkout master
+ 1754  git pull origin master
+ 1755  ls
+ 1756  cd src/test/java/com/vodafone/start/cucumber/selenium/stepdefs/
+ 1757  ls -ltr
+ 1758  git checkout develop
+ 1759  ls
+ 1760  git merge master
+ 1761  git status
+ 1762  ks
+ 1763  ls -ltr
+ 1764  git status
+ 1765  git add TestContext.java 
+ 1766  git commit -m"File added"
+ 1767  git push origin develop
+ 1768  ls -ltr
+ 1769  cat TestContext.java 
+ 1770  ls
+ 1771  cd 
+ 1772  ls -ltr
+ 1773  cd Documents/project/
+ 1774  ls
+ 1775  cd niv/
+ 1776  ls
+ 1777  cd ..
+ 1778  ls
+ 1779  man git
+ 1780  ls
+ 1781  cd tiger_web/
+ 1782  ls -ltr
+ 1783  git branch
+ 1784  git pull origin develop
+ 1785  ls -ltr
+ 1786  cd Upload_Contents/
+ 1787  ls
+ 1788  git status
+ 1789  cd
+ 1790  cd Documents/DevOps/
+ 1791  ls
+ 1792  cd GradleStudy/
+ 1793  ls
+ 1794  cd basic-demo/
+ 1795  ls
+ 1796  ls -ltr
+ 1797  cat build.gradle 
+ 1798  ls
+ 1799  docker -version
+ 1800  docker --version
+ 1801  echo $JAVA_HOME
+ 1802  $JAVA_HOME/bin/java --version
+ 1803  $JAVA_HOME/bin/java -version
+ 1804  java -version
+ 1805  sudo docker ls -a
+ 1806  sudo docker container ls -a
+ 1807  cd
+ 1808  cd -
+ 1809  cd
+ 1810  cd Documents/DevOps/
+ 1811  ls
+ 1812  ls -ltr
+ 1813  cd
+ 1814  ls
+ 1815  cd Documents/project/
+ 1816  ls
+ 1817  cd ContainerPOC/
+ 1818  ls
+ 1819  cd FE/
+ 1820  ls
+ 1821  cp Dockerfile_base ../../../../Desktop/apache-vhost/
+ 1822  cp -r proton-fe ../../../../Desktop/apache-vhost/
+ 1823  ls
+ 1824  cd smhs-fe/
+ 1825  ls
+ 1826  cd
+ 1827  sudo systemctl start jenkins
+ 1828  ps -ef | grep jenkins
+ 1829  docker -v
+ 1830  ls
+ 1831  docker -version
+ 1832  docker --version
+ 1833  docker-compose --version
+ 1834  docker images
+ 1835  sudo docker images
+ 1836  sudo docker pull nginx:1.10.1-alpine
+ 1837  sudo docker images
+ 1838  sudo docker run --name my-nginx -p 80:80 nginx:1.10.1-alpine
+ 1839  ps -ef | grep :80
+ 1840  sudo docker run --name my-nginx -p 8082:80 nginx:1.10.1-alpine
+ 1841  sudo docker ps
+ 1842  sudo docker ls
+ 1843  sudo docker images
+ 1844  sudo docker ps
+ 1845  sudo docker container ls
+ 1846  sudo docker run --name my-nginx -p 8082:80 nginx:1.10.1-alpine
+ 1847  sudo docker container 
+ 1848  sudo docker container rm f175b71762b8b3052b5695beb5b5ac043ba85fc7d5544d03602d06d9a429792d
+ 1849  sudo docker container ls
+ 1850  sudo docker run --name my-nginx -p 8082:80 nginx:1.10.1-alpine
+ 1851  sudo docker container ls
+ 1852  sudo docker container ls -all
+ 1853  sudo docker container rm 3d1fcd09f095
+ 1854  sudo docker container ls -all
+ 1855  sudo docker run --name new-nginx -p 8090:80 nginx:1.10.1-alpine
+ 1856  sudo docker container ls -all
+ 1857  sudo docker container rm 6cd26c8b6fa3
+ 1858  sudo docker container ls -all
+ 1859  sudo docker run --name niv -d -p 8090:80 nginx:1.10.1-alpine
+ 1860  sudo docker container ps
+ 1861  sudo docker container -a
+ 1862  sudo docker container ls -a
+ 1863  sudo docker container ps
+ 1864  sudo docker  ps
+ 1865  sudo docker  logs niv
+ 1866  sudo docker logs -f niv
+ 1867  sudo docker inspect niv
+ 1868  sudo docker exec -ti niv /bin/sh
+ 1869  pwd
+ 1870  cd Documents/DevOps/
+ 1871  ls
+ 1872  touch nginx.conf
+ 1873  vi nginx.conf
+ 1874  pwd
+ 1875  cd
+ 1876  sudo docker container ps
+ 1877  sudo docker container niv stop
+ 1878  sudo docker container stop niv
+ 1879  sudo docker container ps
+ 1880  sudo docker container ls -a
+ 1881  sudo docker run --name niv -d -p 8090:80 -v /home/vfroot/Documents/DevOps/nginx.conf:/etc/nginx/nginx.conf:ro nginx:1.10.1-alpine
+ 1882  sudo docker container ls -a
+ 1883  sudo docker container rm niv
+ 1884  sudo docker container ls -a
+ 1885  sudo docker run --name niv -d -p 8090:80 -v /home/vfroot/Documents/DevOps/nginx.conf:/etc/nginx/nginx.conf:ro nginx:1.10.1-alpine
+ 1886  sudo docker container ls -a
+ 1887  sudo docker container stop niv
+ 1888  sudo docker container rm niv
+ 1889  pwd
+ 1890  cd Documents/DevOps/
+ 1891  ls
+ 1892  less Untitled\ Document 
+ 1893  vi index.html
+ 1894  pwd
+ 1895  sudo docker container ls -a
+ 1896  sudo docker run --name niv -d -p 8090:80 -v /home/vfroot/Documents/DevOps/nginx.conf:/etc/nginx/nginx.conf:ro -v /home/vfroot/Documents/DevOps:/usr/share/nginx/html:ro  nginx:1.10.1-alpine
+ 1897  sudo docker container ls -a
+ 1898  vi index.html 
+ 1899  ls
+ 1900  cd .
+ 1901  cd ..
+ 1902  ls
+ 1903  cd project/
+ 1904  ls
+ 1905  git clone  https://tools.dct.vodafone.com/gitlab/vf-start/ContainerPOC.git
+ 1906  ls
+ 1907  cd ContainerPOC/
+ 1908  ls
+ 1909  cd Fe
+ 1910  cd FE/
+ 1911  ls
+ 1912  ls -ltr
+ 1913  cd proton-fe/
+ 1914  ls
+ 1915  cd proton-conf/
+ 1916  ls
+ 1917  cd rewrites/
+ 1918  ls
+ 1919  less common.conf 
+ 1920  less proton_security.conf 
+ 1921  cd ../vhosts/
+ 1922  ls
+ 1923  less proton.conf 
+ 1924  cd
+ 1925  sudo docker exec -ti niv /bin/sh
+ 1926  sudo docker container ls -a
+ 1927  cd Desktop/
+ 1928  ls
+ 1929  mkdir apache-vhost
+ 1930  ls
+ 1931  cd apache-vhost/
+ 1932  ls
+ 1933  ls -ltr
+ 1934  cd proton-fe/
+ 1935  ls
+ 1936  cd ..
+ 1937  ls
+ 1938  git status
+ 1939  ls
+ 1940  mv proton-fe niv-fe
+ 1941  ls -ltr
+ 1942  less Dockerfile_base 
+ 1943  ls -ltr
+ 1944  less Dockerfile_base 
+ 1945  cd i
+ 1946  cd niv-fe/
+ 1947  ls
+ 1948  less Dockerfile 
+ 1949  mv proton-conf niv-conf
+ 1950  mr proton-fe.yml niv-fe.yaml
+ 1951  mv proton-fe.yml niv-fe.yaml
+ 1952  ls -ltr
+ 1953  cd ..
+ 1954  ls
+ 1955  cd niv-fe/
+ 1956  ls
+ 1957  less Dockerfile 
+ 1958  vi Dockerfile 
+ 1959  cd niv-conf/
+ 1960  ls
+ 1961  cd vhosts/
+ 1962  ls
+ 1963  less proton.conf 
+ 1964  mv proton.conf niv.conf
+ 1965  cd ..
+ 1966  ls
+ 1967  cd core/
+ 1968  ls
+ 1969  mv common_logging.proton.conf common_logging.niv.conf 
+ 1970  mv mod_security.proton.conf mod_security.niv.conf 
+ 1971  less modules.conf 
+ 1972  cd ..
+ 1973  ls
+ 1974  cd extra/
+ 1975  ls
+ 1976  less httpd-vhosts.conf 
+ 1977  cd ..
+ 1978  ls
+ 1979  less httpd.conf 
+ 1980  cd rewrites/
+ 1981  ls
+ 1982  mv proton_security.conf niv_security.conf 
+ 1983  ls
+ 1984  less niv_security.conf 
+ 1985  less common.conf 
+ 1986  cd ..
+ 1987  ls
+ 1988  cd vhosts/
+ 1989  cd ..
+ 1990  ls
+ 1991  cd ..
+ 1992  ls
+ 1993  cat Dockerfile 
+ 1994  cd niv-conf/
+ 1995  ls
+ 1996  cd vhosts/
+ 1997  ls
+ 1998  less niv.conf 
+ 1999  sudo docker container ps -a
+ 2000  vi Documents/DevOps/index.html 
+ 2001  ls
+ 2002  cd ..
+ 2003  ls
+ 2004  cd ...
+ 2005  cd ..
+ 2006  ls
+ 2007  less Dockerfile 
+ 2008  sudo vi index.html
+ 2009  ls
+ 2010  hostname
+ 2011  nslookup niv.thinkpad.com
+ 2012  ls
+ 2013  cd niv-conf/
+ 2014  ls
+ 2015  vi vhosts/niv.conf 
+ 2016  cd ..
+ 2017  ls
+ 2018  cat Dockerfile 
+ 2019  ls
+ 2020  vi niv-
+ 2021  cat niv-fe.yaml 
+ 2022  ls
+ 2023  rm niv-fe.yaml 
+ 2024  ls
+ 2025  cd niv-conf/
+ 2026  ls
+ 2027  cd core/
+ 2028  ls
+ 2029  less main.conf 
+ 2030  less mime.
+ 2031  less mime.conf 
+ 2032  ls
+ 2033  less common_logging.niv.conf 
+ 2034  less misc.conf 
+ 2035  less mod_security.niv.conf 
+ 2036  less modules.conf 
+ 2037  cd ..
+ 2038  ls
+ 2039  cd extra/
+ 2040  ls
+ 2041  less httpd-default.conf 
+ 2042  less httpd-vhosts.conf 
+ 2043  cd ..
+ 2044  ls
+ 2045  cd rewrites/
+ 2046  ls
+ 2047  less niv_security.conf 
+ 2048  cd ..
+ 2049  ls
+ 2050  cd vhosts/
+ 2051  ls
+ 2052  less niv.conf 
+ 2053  sudo vi niv.conf 
+ 2054  cd ..
+ 2055  ls
+ 2056  cd ..
+ 2057  ls
+ 2058  cat Dockerfile 
+ 2059  nslookup tools.dct.vodafone.com
+ 2060  ls
+ 2061  cat Dockerfile 
+ 2062  sudo docker container ps
+ 2063  sudo docker container ls -a
+ 2064  sudo docker container niv status
+ 2065  sudo docker container status niv
+ 2066  sudo docker container status 
+ 2067  sudo docker container stats
+ 2068  sudo docker container stop niv
+ 2069  sudo docker container ls -a
+ 2070  sudo docker run --name niv -d -p 8090:80 -v /home/vfroot/Documents/DevOps/nginx.conf:/etc/nginx/nginx.conf:ro -v /home/vfroot/Documents/DevOps:/usr/share/nginx/html:ro  nginx:1.10.1-alpine
+ 2071  sudo docker run --name niv1 -d -p 8090:80 -v /home/vfroot/Documents/DevOps/nginx.conf:/etc/nginx/nginx.conf:ro -v /home/vfroot/Documents/DevOps:/usr/share/nginx/html:ro  nginx:1.10.1-alpine
+ 2072  sudo docker container ls -a
+ 2073  sudo docker build -t niv_apache:1.0 .  
+ 2074  ls
+ 2075  sudo docker images
+ 2076  sudo docker build -t niv_apache:1.0 .
+ 2077  ls
+ 2078  cd ..
+ 2079  ls
+ 2080  cat Dockerfile_base 
+ 2081  sudo mv Dockerfile_base Dockerfile
+ 2082  ls
+ 2083  cd ..
+ 2084  ls
+ 2085  mkdir test_virtual_host
+ 2086  sudo mv apache-vhost/niv-fe test_virtual_host/
+ 2087  cd apache-vhost/
+ 2088  ls
+ 2089  cd ../test_virtual_host/
+ 2090  ls
+ 2091  cd ..
+ 2092  ls
+ 2093  cd apache-vhost/
+ 2094  ls
+ 2095  sudo docker build -t niv_apache:1.0 .
+ 2096  sudo docker images
+ 2097  cat Dockerfile 
+ 2098  sudo docker images
+ 2099  sudo docker images ls
+ 2100  sudo docker images -all
+ 2101  sudo docker images --help
+ 2102  sudo docker images -a
+ 2103  sudo docker run -d -p 8888:8888 httpd
+ 2104  sudo docker run -d -p 8888:8888 niv_apache:1.0
+ 2105  sudo docker images -a
+ 2106  sudo docker images rmi 8f6032b49042
+ 2107  sudo docker images --fileter "dangling=true"
+ 2108  sudo docker images --filter "dangling=true"
+ 2109  sudo docker rmi 8f6032b49042
+ 2110  sudo docker container ps
+ 2111  sudo docker container ls -a
+ 2112  sudo docker container stop 0492782df46b
+ 2113  sudo docker container ls -a
+ 2114  sudo docker container rm 0492782df46b
+ 2115  sudo docker container ls -a
+ 2116  sudo docker container stop fb45aa1d5f0b
+ 2117  sudo docker container stop 31e9b7aa2dac
+ 2118  sudo docker container ls -a
+ 2119  sudo docker container rm fb45aa1d5f0b
+ 2120  sudo docker container rm 31e9b7aa2dac
+ 2121  sudo docker container ls -a
+ 2122  sudo docker images -ls 
+ 2123  sudo docker images -a
+ 2124  sudo docker images rmi 8f6032b49042
+ 2125  sudo docker rmi 8f6032b49042
+ 2126  sudo docker images -a
+ 2127  ls
+ 2128  cat Dockerfile 
+ 2129  history > ../history.txt

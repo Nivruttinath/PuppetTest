@@ -1,0 +1,87 @@
+SonarQube :
+
+
+MySql Installation :
+Step 1 – Configure Apt Repository
+# wget http://repo.mysql.com/mysql-apt-config_0.8.9-1_all.deb
+# sudo dpkg -i mysql-apt-config_0.8.9-1_all.deb
+This will prompt you to select MySQL version to be install. so that dpkg configure the apt repository accordingly.
+
+Step 2 – Install MySQL Server
+# sudo apt-get update
+# sudo apt-get install mysql-server
+The installation process will prompt for the default password of root user and again to confirm the password.
+
+Step 3 – Secure MySQL Installation
+Now run the mysql_secure_installation command. This will prompt for the configuration of variable security changes. Like enable password strength using VALIDATE PASSWORD PLUGIN, disable remote root login, remote test database and connection to it.
+# mysql_secure_installation
+
+Step 4 – Working with MySQL
+Finally, login to MySQL server using the following command. Enter the password created during installation.
+# mysql -u root -p (Let$doit!)
+
+Create SonarQube database and User
+# mysql -u root -p
+
+Run following commands to create user
+# CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
+# CREATE USER 'sonar' IDENTIFIED BY 'Let$doit!';
+# GRANT ALL ON sonar.* TO 'sonar'@'%' IDENTIFIED BY 'Let$doit!';
+# GRANT ALL ON sonar.* TO 'sonar'@'localhost' IDENTIFIED BY 'sonar';
+# FLUSH PRIVILEGES;
+
+
+Step 5 - Download and configure SonarQube
+# sudo wget https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-6.4.zip
+# sudo unzip sonarqube-6.4.zip -d /opt
+# sudo mv /opt/sonarqube-6.4 /opt/SP/sonarqube
+
+Open the SonarQube configuration file using your favorite text editor.
+# sudo vi /opt/sonarqube/conf/sonar.properties
+Find the following lines.
+#sonar.jdbc.username=
+#sonar.jdbc.password=
+Uncomment and provide the MySql username and password of the database that we have created earlier. It should look like:
+sonar.jdbc.username=sonar
+sonar.jdbc.password=StrongPassword
+
+Uncomment the line, save the file and exit from the editor.
+sonar.jdbc.url=jdbc:mysql://localhost:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance
+
+Step 6 - Configure Systemd service
+SonarQube can be started directly using the startup script provided in the installer package. As a matter of convenience, you should setup a Systemd unit file for SonarQube.
+# sudo vi /etc/systemd/system/sonar.service
+Populate the file with:
+
+[Unit]
+Description=SonarQube service
+After=syslog.target network.target
+
+[Service]
+Type=forking
+
+ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start
+ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop
+
+User=root
+Group=root
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+Start the application by running:
+# sudo systemctl start sonar
+
+To check if the service is running, run:
+# sudo systemctl status sonar
+
+Log in using the initial administrator account, admin and admin. You can now use SonarQube to continuously analyze the code you have written.
+
+http://127.0.0.1:9000/dashboards
+admin
+admin
+
+Let$doit!: dabfad627a5150e9f8dca13bb9c43738cc995012
+https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Gradle
+
